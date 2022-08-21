@@ -2,7 +2,9 @@
   <div id="flashMessage" v-if="GStore.flashMessage">
     {{ GStore.flashMessage }}
   </div>
-  <h1>🏥 COVID-19 VACCINATION 💉</h1>
+  <div class="title">
+    <h1>🏥 COVID-19 VACCINATION 💉</h1>
+  </div>
   <router-view />
 </template>
 <script>
@@ -11,21 +13,27 @@ export default {
 }
 </script>
 <style>
-@keyframes yellowfade {
+@keyframes fade {
   from {
-    background: #b5375b;
+    background: #f9ffc2;
   }
   to {
     background: transparent;
   }
 }
+
 #flashMessage {
-  animation-name: yellowfade;
-  animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 5s;
 }
 
-h1 {
-  padding: 30px;
+body {
+  background: #7da1d4;
+}
+
+.title {
+  padding: 40px;
+  background: #eff9fe;
 }
 
 #app {
@@ -33,21 +41,7 @@ h1 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background: #7da1d4;
 }
 
-nav {
-  font-size: 20px;
-  padding-bottom: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #2c3e50;
-}
 @import '~bootstrap/dist/css/bootstrap.css';
 </style>

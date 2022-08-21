@@ -1,25 +1,7 @@
 <template>
-  <div class="home">
-    <table>
-      <tr>
-        <th></th>
-        <th>NAME</th>
-        <th>VACCINATION STATUS</th>
-      </tr>
-      <tr v-for="patient in patients" :key="patient.id" :patient="patient">
-        <router-link
-          class="event-link"
-          :to="{ name: 'PatientDetailView', params: { id: patient.id } }"
-        >
-          <td><img :src="patient.image" class="image" /></td>
-        </router-link>
-        <td>{{ patient.name }} {{ patient.surname }}</td>
-        <td>{{ patient.status }}</td>
-      </tr>
-    </table>
-    <div class="pagination">
+  <div class="row" id="home">
+    <div class="col-3" id="pagination">
       <router-link
-        id="page-prev"
         :to="{
           name: 'home',
           query: { page: page - 1 }
@@ -27,10 +9,30 @@
         rel="prev"
         v-if="page != 1"
       >
-        ←</router-link
-      >
+        ←
+      </router-link>
+    </div>
+    <div class="col-6">
+      <table>
+        <tr>
+          <th></th>
+          <th>NAME</th>
+          <th>VACCINATION STATUS</th>
+        </tr>
+        <tr v-for="patient in patients" :key="patient.id" :patient="patient">
+          <router-link
+            class="event-link"
+            :to="{ name: 'PatientDetailView', params: { id: patient.id } }"
+          >
+            <td><img :src="patient.image" class="image" /></td>
+          </router-link>
+          <td>{{ patient.name }} {{ patient.surname }}</td>
+          <td>{{ patient.status }}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-3" id="pagination">
       <router-link
-        id="page-next"
         :to="{
           name: 'home',
           query: { page: page + 1 }
@@ -108,31 +110,14 @@ export default {
 }
 </script>
 <style scoped>
-.home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#pagination {
+  margin: auto;
+  font-size: 70px;
 }
 
-.pagination {
-  display: flex;
-  width: 1300px;
-}
-
-.pagination a {
-  flex: 1;
+#pagination a {
   text-decoration: none;
   color: #2c3e50;
-}
-
-#page-prev {
-  text-align: left;
-  font-size: 70px;
-}
-
-#page-next {
-  text-align: right;
-  font-size: 70px;
 }
 
 .image {
@@ -147,21 +132,21 @@ export default {
 }
 
 table {
-  position: relative;
   margin: auto;
+  margin-top: 50px;
 }
 
 th {
   background: #161240;
   color: #eff9fe;
   font-weight: 100;
+  text-align: center;
 }
 
 table,
 th,
 td {
   padding: 10px;
-  text-align: center;
 }
 
 tr {

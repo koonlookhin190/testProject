@@ -1,10 +1,10 @@
 <template>
   <div class="event-card">
     <div class="row">
-      <div class="col-6" style="margin-bottom: 200px">
+      <div class="col-6">
         <CommentForm @comment-submited="addComment" />
       </div>
-      <div class="col-6" style="padding-top: 40px">
+      <div class="col-6">
         <CommentList
           v-if="GStore.comments"
           :comments="GStore.patient.doctorRec"

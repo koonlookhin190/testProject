@@ -1,28 +1,23 @@
 <template>
   <div v-if="GStore.patient">
-    <div class="row" id="row">
-      <div class="col-1"></div>
-      <div class="col-10">
-        <div class="row" id="nav">
-          <div class="col-3" id="border">
-            <router-link to="/">HOME</router-link>
-          </div>
-          <div class="col-3">
-            <router-link :to="{ name: 'PatientDetailView' }"
-              >PERSONAL INFORMATION</router-link
-            >
-          </div>
-          <div class="col-3" id="border">
-            <router-link :to="{ name: 'VaccineDetail' }"
-              >VACCINATION INFORMATION</router-link
-            >
-          </div>
-          <div class="col-3" id="borderR">
-            <router-link :to="{ name: 'DoctorComment' }"
-              >DOCTOR COMMENT</router-link
-            >
-          </div>
-        </div>
+    <div class="row" id="navbar">
+      <div class="col-3">
+        <router-link to="/">HOME</router-link>
+      </div>
+      <div class="col-3" id="border">
+        <router-link :to="{ name: 'PatientDetailView' }"
+          >PERSONAL INFORMATION</router-link
+        >
+      </div>
+      <div class="col-3" id="border">
+        <router-link :to="{ name: 'VaccineDetail' }"
+          >VACCINATION INFORMATION</router-link
+        >
+      </div>
+      <div class="col-3" id="border">
+        <router-link :to="{ name: 'DoctorComment' }"
+          >DOCTOR COMMENT</router-link
+        >
       </div>
     </div>
     <router-view :patient="GStore.patient" :vaccines="GStore.vaccines" />
@@ -34,24 +29,16 @@ export default {
 }
 </script>
 <style scoped>
-#row {
+#navbar {
   background: #161240;
-}
-
-#nav {
   padding: 10px;
 }
 
-#border {
-  border-right: solid white 1px;
-  border-left: solid white 1px;
-}
-
-#borderR {
-  border-right: solid white 1px;
-}
-
-#nav a {
+#navbar a {
   color: #eff9fe;
+}
+
+#border {
+  border-left: solid white 1px;
 }
 </style>

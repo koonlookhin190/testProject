@@ -28,15 +28,15 @@ export default {
   },
   methods: {
     onSubmit() {
-      // this.GStore.flashMessage = 'The comment is adding '
-      // setTimeout(() => {
-      //   //After 3 secound remove it
-      //   this.GStore.flashMessage = ''
-      // }, 3000)
       if (this.name === '' || this.comment === '' || this.date === null) {
         alert('Comment incomplete. Please fill out every field.')
         return
       }
+      this.GStore.flashMessage = 'The comment is being added '
+      setTimeout(() => {
+        //After 3.5 secound remove it
+        this.GStore.flashMessage = ''
+      }, 3500)
       let doctorComment = {
         patient_id: GStore.patient.id,
         patient_name: GStore.patient.name,
@@ -74,10 +74,8 @@ label {
   flex-direction: column;
   width: 420px;
   padding: 20px;
-  position: relative;
   margin: auto;
   margin-top: 40px;
-  margin-right: 60px;
   border: 2px solid #d8d8d8;
   border-radius: 10px;
   background: #eff9fe;
@@ -88,7 +86,8 @@ label {
 
 .comment-form .button {
   display: block;
-  margin: 20px auto;
+  margin: auto;
+  margin-top: 25px;
   background: #b5c7df;
   border: 2px solid #d8d8d8;
   border-radius: 5px;

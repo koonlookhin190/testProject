@@ -30,27 +30,18 @@ export default {
 }
 </script>
 <style scoped>
-#comment {
-  font-size: 18px;
-  text-align: left;
-}
-
 .comment-container {
   width: 425px;
   padding: 20px;
-  position: relative;
+  font-size: 18px;
+  text-align: left;
   margin: auto;
-  margin-left: 60px;
-  margin-bottom: 40px;
+  margin-top: 40px;
   border-radius: 10px;
   background: #eff9fe;
   -webkit-box-shadow: 0px 2px 20px -12px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 2px 20px -12px rgba(0, 0, 0, 0.57);
   box-shadow: 2px 20px -12px rgba(0, 0, 0, 0.57);
   border: 2px solid #d8d8d8;
-}
-
-.comment-container li {
-  margin-bottom: 30px;
 }
 </style>
