@@ -1,8 +1,6 @@
 <template>
   <form class="comment-form" @submit.prevent="onSubmit">
-    <h3>Doctor Comment</h3>
-
-    <label for="name">Name:</label>
+    <label for="name">Doctor Name:</label>
     <input id="name" v-model="name" />
 
     <label for="date">Date:</label>
@@ -68,38 +66,42 @@ input {
 label {
   font-size: 20px;
   margin-bottom: 5px;
+  text-align: left;
 }
+
 .comment-form {
   display: flex;
   flex-direction: column;
-  width: 425px;
+  width: 420px;
   padding: 20px;
-  margin: 40px;
+  position: relative;
+  margin: auto;
+  margin-top: 40px;
+  margin-right: 60px;
   border: 2px solid #d8d8d8;
-  background-color: white;
+  border-radius: 10px;
+  background: #eff9fe;
   -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
   box-shadow: 2px 15px -12px rgba(0, 0, 0, 0.57);
 }
+
 .comment-form .button {
   display: block;
-  margin: 30px auto;
-}
-
-select {
-  height: 40px;
-  font-size: 20px;
-  background-color: white;
-  cursor: pointer;
+  margin: 20px auto;
+  background: #b5c7df;
+  border: 2px solid #d8d8d8;
+  border-radius: 5px;
 }
 
 textarea {
-  width: 95%;
+  width: 100%;
   height: 70px;
   padding: 10px;
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
+
 @media only screen and (max-width: 600px) {
   .comment-form {
     width: 90%;

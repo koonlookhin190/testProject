@@ -1,10 +1,22 @@
 <template>
   <div class="home">
-    <PatientCard
-      v-for="patient in patients"
-      :key="patient.id"
-      :patient="patient"
-    ></PatientCard>
+    <table>
+      <tr>
+        <th></th>
+        <th>NAME</th>
+        <th>VACCINATION STATUS</th>
+      </tr>
+      <tr v-for="patient in patients" :key="patient.id" :patient="patient">
+        <router-link
+          class="event-link"
+          :to="{ name: 'PatientDetailView', params: { id: patient.id } }"
+        >
+          <td><img :src="patient.image" class="image" /></td>
+        </router-link>
+        <td>{{ patient.name }} {{ patient.surname }}</td>
+        <td>{{ patient.status }}</td>
+      </tr>
+    </table>
     <div class="pagination">
       <router-link
         id="page-prev"
@@ -15,7 +27,7 @@
         rel="prev"
         v-if="page != 1"
       >
-        Prev Page</router-link
+        ←</router-link
       >
       <router-link
         id="page-next"
@@ -26,7 +38,7 @@
         rel="next"
         v-if="hasNextPage"
       >
-        Next Page</router-link
+        →</router-link
       >
     </div>
   </div>
@@ -34,7 +46,6 @@
 
 <script>
 // @ is an alias to /src
-import PatientCard from '../components/PatientCard.vue'
 import PatientService from '../service/PatientService.js'
 export default {
   name: 'PatientView',
@@ -47,9 +58,6 @@ export default {
       type: Number,
       required: true
     }
-  },
-  components: {
-    PatientCard
   },
   data() {
     return {
@@ -105,12 +113,10 @@ export default {
   flex-direction: column;
   align-items: center;
 }
-h4 {
-  font-size: 20px;
-}
+
 .pagination {
   display: flex;
-  width: 290px;
+  width: 1300px;
 }
 
 .pagination a {
@@ -121,9 +127,45 @@ h4 {
 
 #page-prev {
   text-align: left;
+  font-size: 70px;
 }
 
 #page-next {
   text-align: right;
+  font-size: 70px;
+}
+
+.image {
+  width: 90px;
+  height: 120px;
+  border-radius: 3px;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+table {
+  position: relative;
+  margin: auto;
+}
+
+th {
+  background: #161240;
+  color: #eff9fe;
+  font-weight: 100;
+}
+
+table,
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+tr {
+  border-top: 1px solid #161240;
+  background: #eff9fe;
 }
 </style>
