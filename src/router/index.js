@@ -27,7 +27,6 @@ const routes = [
       return (
         PatientService.getPatient(to.params.id)
           .then((response) => {
-            //Still need to set the data here
             GStore.patient = response.data
             GStore.patient.doctorRec = GStore.comments.filter(
               (patient) => GStore.patient.id == patient.patient_id
@@ -35,46 +34,20 @@ const routes = [
           })
           .catch((error) => {
             console.log(error)
-            // if (error.response && error.response.status == 404) {
-            //   return {
-            //     name: "404Resource",
-            //     params: { resource: "patient" },
-            //   };
-            // } else {
-            //   return { name: "NetworkError" };
-            // }
           }),
-        PatientService.getVaccine(to.params.id) //Return and params.id
+        PatientService.getVaccine(to.params.id)
           .then((response) => {
-            //Still need to set the data here
             GStore.vaccines = response.data
           })
           .catch((error) => {
             console.log(error)
-            // if (error.response && error.response.status == 404) {
-            //   return {
-            //     name: "404Resource",
-            //     params: { resource: "patient" },
-            //   };
-            // } else {
-            //   return { name: "NetworkError" };
-            // }
           }),
-        CommentHistoryService.getCommentHistory(to.params.id) //Return and params.id
+        CommentHistoryService.getCommentHistory(to.params.id)
           .then((response) => {
-            //Still need to set the data here
             GStore.commentsHistory = response.data
           })
           .catch((error) => {
             console.log(error)
-            // if (error.response && error.response.status == 404) {
-            //   return {
-            //     name: "404Resource",
-            //     params: { resource: "patient" },
-            //   };
-            // } else {
-            //   return { name: "NetworkError" };
-            // }
           })
       )
     },

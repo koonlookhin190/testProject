@@ -19,13 +19,14 @@
           <th>NAME</th>
           <th>VACCINATION STATUS</th>
         </tr>
-        <tr v-for="patient in patients" :key="patient.id" :patient="patient">
-          <router-link
-            class="event-link"
-            :to="{ name: 'PatientDetailView', params: { id: patient.id } }"
-          >
-            <td><img :src="patient.image" class="image" /></td>
-          </router-link>
+        <tr
+          @click="details(patient.id)"
+          v-for="patient in patients"
+          :key="patient.id"
+          :patient="patient"
+          class="clicking"
+        >
+          <td><img :src="patient.image" class="image" /></td>
           <td>{{ patient.name }} {{ patient.surname }}</td>
           <td>{{ patient.status }}</td>
         </tr>
@@ -59,6 +60,14 @@ export default {
     perPage: {
       type: Number,
       required: true
+    }
+  },
+  methods: {
+    details(id) {
+      this.$router.push({
+        name: 'PatientDetailView',
+        params: { id: id }
+      })
     }
   },
   data() {
@@ -126,8 +135,8 @@ export default {
   border-radius: 3px;
 }
 
-.image:hover {
-  transform: scale(1.05);
+.clicking:hover {
+  transform: scale(1.01);
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
