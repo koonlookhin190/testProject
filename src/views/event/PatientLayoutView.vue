@@ -18,8 +18,8 @@
 </template>
 <script>
 export default {
-  inject: ["GStore"],
-};
+  inject: ['GStore']
+}
 </script>
 <style scoped>
 #nav a {

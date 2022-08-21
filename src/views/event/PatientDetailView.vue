@@ -6,8 +6,8 @@
 </template>
 <script>
 export default {
-  props: ["patient"],
-};
+  props: ['patient']
+}
 </script>
 <style scoped>
 .image {

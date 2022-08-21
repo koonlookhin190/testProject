@@ -13,19 +13,19 @@
 <script>
 // import GStore from '@/store'
 export default {
-  name: "PatientCard",
+  name: 'PatientCard',
   props: {
     patient: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   methods: {
     clearCommment() {
       // console.log(GStore.patient.name)
-    },
-  },
-};
+    }
+  }
+}
 </script>
 <style scoped>
 .event-card {

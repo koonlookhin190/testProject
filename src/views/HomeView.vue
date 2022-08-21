@@ -10,7 +10,7 @@
         id="page-prev"
         :to="{
           name: 'home',
-          query: { page: page - 1 },
+          query: { page: page - 1 }
         }"
         rel="prev"
         v-if="page != 1"
@@ -21,7 +21,7 @@
         id="page-next"
         :to="{
           name: 'home',
-          query: { page: page + 1 },
+          query: { page: page + 1 }
         }"
         rel="next"
         v-if="hasNextPage"
@@ -34,28 +34,28 @@
 
 <script>
 // @ is an alias to /src
-import PatientCard from "../components/PatientCard.vue";
-import PatientService from "../service/PatientService.js";
+import PatientCard from '../components/PatientCard.vue'
+import PatientService from '../service/PatientService.js'
 export default {
-  name: "PatientView",
+  name: 'PatientView',
   props: {
     page: {
       type: Number,
-      required: true,
+      required: true
     },
     perPage: {
       type: Number,
-      required: true,
-    },
+      required: true
+    }
   },
   components: {
-    PatientCard,
+    PatientCard
   },
   data() {
     return {
       patients: null,
-      totalPatients: 0,
-    };
+      totalPatients: 0
+    }
   },
   /* eslint-disable-next-line no-unused-vars */
   beforeRouteEnter(routeTo, routeFrom, next) {
@@ -65,14 +65,14 @@ export default {
     )
       .then((response) => {
         next((comp) => {
-          comp.patients = response.data;
-          comp.totalPatients = response.headers["x-total-count"];
-        });
+          comp.patients = response.data
+          comp.totalPatients = response.headers['x-total-count']
+        })
       })
 
       .catch(() => {
-        next({ name: "NetworkError" });
-      });
+        next({ name: 'NetworkError' })
+      })
   },
   beforeRouteUpdate(routeTo, routeFrom, next) {
     PatientService.getPatients(
@@ -80,24 +80,24 @@ export default {
       parseInt(routeTo.query.perPage) || 4
     )
       .then((response) => {
-        this.patients = response.data;
-        this.totalPatients = response.headers["x-total-count"];
-        next();
+        this.patients = response.data
+        this.totalPatients = response.headers['x-total-count']
+        next()
       })
       .catch(() => {
-        next({ name: "NetworkError" });
-      });
+        next({ name: 'NetworkError' })
+      })
   },
   computed: {
     hasNextPage() {
       //First, calculate total pages
-      let totalPages = Math.ceil(this.totalPatients / this.perPage);
+      let totalPages = Math.ceil(this.totalPatients / this.perPage)
 
       //Then check to see if the current page is less than the total pages
-      return this.page < totalPages;
-    },
-  },
-};
+      return this.page < totalPages
+    }
+  }
+}
 </script>
 <style scoped>
 .home {

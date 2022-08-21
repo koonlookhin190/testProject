@@ -7,24 +7,24 @@
   />
 </template>
 <script>
-import CommentForm from "@/components/CommentForm.vue";
-import CommentList from "@/components/CommentList.vue";
-import GStore from "@/store";
+import CommentForm from '@/components/CommentForm.vue'
+import CommentList from '@/components/CommentList.vue'
+import GStore from '@/store'
 
 export default {
-  inject: ["GStore"],
+  inject: ['GStore'],
   components: {
     CommentForm,
-    CommentList,
+    CommentList
   },
   methods: {
     addComment(comment) {
-      console.log(comment);
-      GStore.comments.push(comment);
+      console.log(comment)
+      GStore.comments.push(comment)
       GStore.patient.doctorRec = GStore.comments.filter(
         (patient) => GStore.patient.id == patient.patient_id
-      );
-    },
-  },
-};
+      )
+    }
+  }
+}
 </script>

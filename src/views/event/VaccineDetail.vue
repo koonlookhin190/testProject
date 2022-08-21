@@ -16,8 +16,8 @@
 </template>
 <script>
 export default {
-  props: ["vaccines"],
-};
+  props: ['vaccines']
+}
 </script>
 <style scoped>
 table,

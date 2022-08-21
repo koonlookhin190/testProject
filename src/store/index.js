@@ -1,9 +1,9 @@
-import { reactive } from "vue";
+import { reactive } from 'vue'
 
 export default reactive({
-  flashMessage: "",
+  flashMessage: '',
   comments: [],
   commentsHistory: null,
   patient: null,
-  vaccines: null,
-});
+  vaccines: null
+})

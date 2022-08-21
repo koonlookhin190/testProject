@@ -10,8 +10,8 @@
 </template>
 <script>
 export default {
-  inject: ["GStore"],
-};
+  inject: ['GStore']
+}
 </script>
 <style>
 @keyframes yellowfade {

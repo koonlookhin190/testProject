@@ -34,8 +34,8 @@
 </template>
 <script>
 export default {
-  props: ["comments", "commentsHistory"],
-};
+  props: ['comments', 'commentsHistory']
+}
 </script>
 <style scoped>
 li {
