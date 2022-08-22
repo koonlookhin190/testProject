@@ -44,7 +44,7 @@
             "status": "3rd dose",
             "vaccine": [ 
                 { "number": 1, "type": "Pfizer", "date": "18-10-2021" },
-                { "number": 2, "type": "Moderna", "date": "09-11-2021" },
+                { "number": 2, "type": "Moderna", "date": "09-11-2021" }
             ],
             "comment": [{ "patient_name": "Peter", "patient_surname": "Parker", "name": "Tony Stark", "comment": "Eat healthy and sleep early", "date": "20-07-2022" } ],
             "doctorRec": []
@@ -213,7 +213,7 @@
             "hometown": "London, Canada",
             "status": "2nd dose",
             "vaccine": [ 
-                { "number": 1, "type": "Pfizer", "date": "01-09-2021" },
+                { "number": 1, "type": "Pfizer", "date": "01-09-2021" }
             ],
             "comment": [{ "patient_name": "Ryan", "patient_surname": "Gosling", "name": "Leif Garrett", "comment": "Eat healthy and drink a lot of water", "date": "22-09-2021" }],
             "doctorRec": []
