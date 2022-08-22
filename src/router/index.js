@@ -14,7 +14,7 @@ const routes = [
     component: HomeView,
     props: (route) => ({
       page: parseInt(route.query.page) || 1,
-      perPage: parseInt(route.query.perPage) || 5
+      perPage: parseInt(route.query.perPage) || 4
     })
   },
   {
