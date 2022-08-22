@@ -138,8 +138,7 @@
             "hometown": "Toronto, Canada",
             "status": "3rd dose",
             "vaccine": [ 
-                { "number": 1, "type": "AZ", "date": "18-03-2021" },
-                { "number": 2, "type": "Moderna", "date": "10-04-2021" }
+                { "number": 1, "type": "AZ", "date": "18-03-2021" }
             ],
             "comment": [{ "patient_name": "Justin", "patient_surname": "Bieber", "name": "Bruno Mars", "comment": "Have enough sleep", "date": "27-12-2021" }],
             "doctorRec": []
@@ -154,8 +153,7 @@
             "hometown": "California, US",
             "status": "2nd dose",
             "vaccine": [ 
-                { "number": 1, "type": "Moderna", "date": "23-08-2021" },
-                { "number": 2, "type": "Moderna", "date": "15-09-2021" }
+                { "number": 1, "type": "Moderna", "date": "23-08-2021" }
             ],
             "comment": [{  "patient_name": "Billie", "patient_surname": "Eilish",  "name": "Whitney Houston", "comment": "Eat healthy and sleep early", "date": "15-09-2021" }],
             "doctorRec": []
@@ -185,8 +183,7 @@
             "hometown": "London, UK",
             "status": "3rd dose",
             "vaccine": [ 
-                { "number": 1, "type": "Pfizer", "date": "06-05-2021" },
-                { "number": 2, "type": "Pfizer", "date": "27-05-2021" }
+                { "number": 1, "type": "Pfizer", "date": "06-05-2021" }
             ],
             "comment": [{ "patient_name": "Dua", "patient_surname": "Lipa", "name": "Mariah Carey", "comment": "Drink a lot of water", "date": "30-12-2021" }],
             "doctorRec": []
@@ -201,8 +198,7 @@
             "hometown": "Bangkok, Thailand",
             "status": "3rd dose",
             "vaccine": [ 
-                { "number": 1, "type": "AZ", "date": "02-02-2021" },
-                { "number": 2, "type": "Moderna", "date": "23-02-2021" }
+                { "number": 1, "type": "AZ", "date": "02-02-2021" }
             ],
             "comment": [{ "patient_name": "Lalisa", "patient_surname": "Manoabn", "name": "Whitney Houston", "comment": "Take medicine everyday", "date": "19-10-2021" }],
             "doctorRec": []
