@@ -9,6 +9,12 @@
             "gender": "Male",
             "hometown": "London, UK",
             "status": "3rd dose",
+            "vaccine": [ 
+                { "number": 1, "type": "Pfizer", "date": "31-07-2021" },
+                { "number": 2, "type": "Pfizer", "date": "21-08-2021" }, 
+                { "number": 3, "type": "Pfizer", "date": "29-01-2022" }
+            ],
+            "comment": [{ "Harry": "Peter", "Potter": "Parker","name": "Albus Dumbledore", "comment": "Take medicine everyday", "date": "29-01-2022" }],
             "doctorRec": []
         },
         {
@@ -20,6 +26,11 @@
             "gender": "Male",
             "hometown": "New Jersey, US",
             "status": "2nd dose",
+            "vaccine": [ 
+                { "number": 1, "type": "Moderna", "date": "04-03-2021" },
+                { "number": 2, "type": "Moderna", "date": "25-03-2021" }
+            ],
+            "comment": [{ "Charlie": "Peter", "Puth": "Parker","name": "Michael Jackson", "comment": "Drink a lot of water",  "date": "25-03-2021" }],
             "doctorRec": []
         },
         {
@@ -31,6 +42,12 @@
             "gender": "Male",
             "hometown": "New York, US",
             "status": "3rd dose",
+            "vaccine": [ 
+                { "number": 1, "type": "Pfizer", "date": "18-10-2021" },
+                { "number": 2, "type": "Moderna", "date": "09-11-2021" },
+                { "number": 3, "type": "Moderna", "date": "20-07-2022" }
+            ],
+            "comment": [{ "patient_name": "Peter", "patient_surname": "Parker", "name": "Tony Stark", "comment": "Eat healthy and sleep early", "date": "20-07-2022" } ],
             "doctorRec": []
         }, 
         {
@@ -42,6 +59,11 @@
             "gender": "Male",
             "hometown": "Toronto, Canada",
             "status": "2nd dose",
+            "vaccine": [ 
+                { "number": 1, "type": "Pfizer", "date": "02-09-2021" },
+                { "number": 2, "type": "Pfizer", "date": "23-09-2021" }
+            ],
+            "comment": [{ "patient_name": "Shawn", "patient_surname": "Mendes", "name": "Michael Jackson", "comment": "Drink a lot of water", "date": "23-09-2021" }],
             "doctorRec": []
         }, 
         {
@@ -53,6 +75,13 @@
             "gender": "Female",
             "hometown": "Florida, US",
             "status": "4th dose",
+            "vaccine": [ 
+                { "number": 1, "type": "AZ", "date": "18-12-2020" },
+                { "number": 2, "type": "AZ", "date": "11-01-2021" },
+                { "number": 3, "type": "Moderna", "date": "22-10-2021" },
+                { "number": 4, "type": "Moderna", "date": "29-06-2022" }
+            ],
+            "comment": [{ "patient_name": "Ariana", "patient_surname": "Grande", "name": "Mariah Carey", "comment": "Eat well and drink a lot of water",  "date": "29-06-2022" }],
             "doctorRec": []
         } ,
         {
@@ -64,6 +93,10 @@
             "gender": "Male",
             "hometown": "Ohio, US",
             "status": "1st dose",
+            "vaccine": [ 
+                { "number": 1, "type": "Pfizer", "date": "18-10-2021" }
+            ],
+            "comment": [{ "patient_name": "John", "patient_surname": "Legend", "name": "Michael Jackson", "comment": "Do some exercise", "date": "18-10-2021" }],
             "doctorRec": []
         },
         {
@@ -75,6 +108,11 @@
             "gender": "Female",
             "hometown": "East Tilbury, UK",
             "status": "2nd dose",
+            "vaccine": [ 
+                { "number": 1, "type": "Moderna", "date": "24-02-2021" },
+                { "number": 2, "type": "Moderna", "date": "18-03-2021" }
+            ],
+            "comment": [{ "patient_name": "Anne", "patient_surname": "Marie", "name": "Mariah Carey", "comment": "Have enough sleep", "date": "18-03-2021" }],
             "doctorRec": []
         },
         {
@@ -86,6 +124,12 @@
             "gender": "Male",
             "hometown": "Seoul, Korea",
             "status": "3rd dose",
+            "vaccine": [ 
+                { "number": 1, "type": "Pfizer", "date": "15-01-2021" },
+                { "number": 2, "type": "Pfizer", "date": "08-02-2021" },
+                { "number": 3, "type": "Pfizer", "date": "19-09-2021" }
+            ],
+            "comment": [{ "patient_name": "Namjoon", "patient_surname": "Kim", "name": "Bruno Mars", "comment": "Take medicine everyday", "date": "19-09-2021" }],
             "doctorRec": []
         },
         {
@@ -97,6 +141,12 @@
             "gender": "Male",
             "hometown": "Toronto, Canada",
             "status": "3rd dose",
+            "vaccine": [ 
+                { "number": 1, "type": "AZ", "date": "18-03-2021" },
+                { "number": 2, "type": "Moderna", "date": "10-04-2021" },
+                { "number": 3, "type": "Moderna", "date": "27-12-2021" }
+            ],
+            "comment": [{ "patient_name": "Justin", "patient_surname": "Bieber", "name": "Bruno Mars", "comment": "Have enough sleep", "date": "27-12-2021" }],
             "doctorRec": []
         },
         {
@@ -108,6 +158,11 @@
             "gender": "Female",
             "hometown": "California, US",
             "status": "2nd dose",
+            "vaccine": [ 
+                { "number": 1, "type": "Moderna", "date": "23-08-2021" },
+                { "number": 2, "type": "Moderna", "date": "15-09-2021" }
+            ],
+            "comment": [{  "patient_name": "Billie", "patient_surname": "Eilish",  "name": "Whitney Houston", "comment": "Eat healthy and sleep early", "date": "15-09-2021" }],
             "doctorRec": []
         },
         {
@@ -119,6 +174,10 @@
             "gender": "Female",
             "hometown": "Menchester, UK",
             "status": "1st dose",
+            "vaccine": [ 
+                { "number": 1, "type": "Johnson", "date": "04-07-2021" }
+            ],
+            "comment": [{ "patient_name": "Emma", "patient_surname": "Watson", "name": "Angelina Jolie", "comment": "Eat well and drink a lot of water", "date": "04-07-2021" }],
             "doctorRec": []
         } ,
         {
@@ -130,6 +189,12 @@
             "gender": "Female",
             "hometown": "London, UK",
             "status": "3rd dose",
+            "vaccine": [ 
+                { "number": 1, "type": "Pfizer", "date": "06-05-2021" },
+                { "number": 2, "type": "Pfizer", "date": "27-05-2021" },
+                { "number": 3, "type": "Pfizer", "date": "30-12-2021" }
+            ],
+            "comment": [{ "patient_name": "Dua", "patient_surname": "Lipa", "name": "Mariah Carey", "comment": "Drink a lot of water", "date": "30-12-2021" }],
             "doctorRec": []
         },
         {
@@ -141,6 +206,12 @@
             "gender": "Female",
             "hometown": "Bangkok, Thailand",
             "status": "3rd dose",
+            "vaccine": [ 
+                { "number": 1, "type": "AZ", "date": "02-02-2021" },
+                { "number": 2, "type": "Moderna", "date": "23-02-2021" },
+                { "number": 3, "type": "Moderna", "date": "19-10-2021" }
+            ],
+            "comment": [{ "patient_name": "Lalisa", "patient_surname": "Manoabn", "name": "Whitney Houston", "comment": "Take medicine everyday", "date": "19-10-2021" }],
             "doctorRec": []
         },
         {
@@ -152,6 +223,11 @@
             "gender": "Male",
             "hometown": "London, Canada",
             "status": "2nd dose",
+            "vaccine": [ 
+                { "number": 1, "type": "Pfizer", "date": "01-09-2021" },
+                { "number": 2, "type": "Moderna", "date": "22-09-2021" }
+            ],
+            "comment": [{ "patient_name": "Ryan", "patient_surname": "Gosling", "name": "Leif Garrett", "comment": "Eat healthy and drink a lot of water", "date": "22-09-2021" }],
             "doctorRec": []
         },
         {
@@ -163,135 +239,12 @@
             "gender": "Male",
             "hometown": "New York, US",
             "status": "2nd dose",
-            "doctorRec": []
-        }
-    ],
-    "vaccine" : [
-        { 
-            "id": 1,
-            "details":
-            [
-                { "number": 1, "type": "Pfizer", "date": "31-07-2021" },
-                { "number": 2, "type": "Pfizer", "date": "21-08-2021" }, 
-                { "number": 3, "type": "Pfizer", "date": "29-01-2022" }
-            ]
-        }, 
-        { 
-            "id": 2,
-            "details": 
-            [
-                { "number": 1, "type": "Moderna", "date": "04-03-2021" },
-                { "number": 2, "type": "Moderna", "date": "25-03-2021" }
-            ]
-        }, 
-        { 
-            "id": 3,
-            "details": 
-            [
-                { "number": 1, "type": "Pfizer", "date": "18-10-2021" },
-                { "number": 2, "type": "Moderna", "date": "09-11-2021" },
-                { "number": 3, "type": "Moderna", "date": "20-07-2022" }
-            ]
-        }, 
-        { 
-            "id": 4,
-            "details": 
-            [
-                { "number": 1, "type": "Pfizer", "date": "02-09-2021" },
-                { "number": 2, "type": "Pfizer", "date": "23-09-2021" }
-            ]
-        }, 
-        { 
-            "id": 5,
-            "details": 
-            [
-                { "number": 1, "type": "AZ", "date": "18-12-2020" },
-                { "number": 2, "type": "AZ", "date": "11-01-2021" },
-                { "number": 3, "type": "Moderna", "date": "22-10-2021" },
-                { "number": 4, "type": "Moderna", "date": "29-06-2022" }
-            ]
-        }, 
-        { 
-            "id": 6,
-            "details": 
-            [
-                { "number": 1, "type": "Pfizer", "date": "18-10-2021" }
-            ]
-        },
-        { 
-            "id": 7,
-            "details": 
-            [
-                { "number": 1, "type": "Moderna", "date": "24-02-2021" },
-                { "number": 2, "type": "Moderna", "date": "18-03-2021" }
-            ]
-        },
-        { 
-            "id": 8,
-            "details": 
-            [
-                { "number": 1, "type": "Pfizer", "date": "15-01-2021" },
-                { "number": 2, "type": "Pfizer", "date": "08-02-2021" },
-                { "number": 3, "type": "Pfizer", "date": "19-09-2021" }
-            ]
-        }, 
-        { 
-            "id": 9,
-            "details": 
-            [
-                { "number": 1, "type": "AZ", "date": "18-03-2021" },
-                { "number": 2, "type": "Moderna", "date": "10-04-2021" },
-                { "number": 3, "type": "Moderna", "date": "27-12-2021" }
-            ]
-        },
-        { 
-            "id": 10,
-            "details": 
-            [
-                { "number": 1, "type": "Moderna", "date": "23-08-2021" },
-                { "number": 2, "type": "Moderna", "date": "15-09-2021" }
-            ]
-        },
-        { 
-            "id": 11,
-            "details": 
-            [
-                { "number": 1, "type": "Johnson", "date": "04-07-2021" }
-            ]
-        }, 
-        { 
-            "id": 12,
-            "details": 
-            [
-                { "number": 1, "type": "Pfizer", "date": "06-05-2021" },
-                { "number": 2, "type": "Pfizer", "date": "27-05-2021" },
-                { "number": 3, "type": "Pfizer", "date": "30-12-2021" }
-            ]
-        },
-        { 
-            "id": 13,
-            "details": 
-            [
-                { "number": 1, "type": "AZ", "date": "02-02-2021" },
-                { "number": 2, "type": "Moderna", "date": "23-02-2021" },
-                { "number": 3, "type": "Moderna", "date": "19-10-2021" }
-            ]
-        },
-        { 
-            "id": 14,
-            "details": 
-            [
-                { "number": 1, "type": "Pfizer", "date": "01-09-2021" },
-                { "number": 2, "type": "Moderna", "date": "22-09-2021" }
-            ]
-        },
-        { 
-            "id": 15,
-            "details": 
-            [
+            "vaccine": [ 
                 { "number": 1, "type": "Pfizer", "date": "11-07-2022" },
                 { "number": 2, "type": "Pfizer", "date": "03-08-2022" }
-            ]
+            ],
+            "comment": [{  "patient_name": "Robert", "patient_surname": "Downey Jr.", "name": "Leif Garrett", "comment": "Eat healthy and drink a lot of water", "date": "03-08-2022" }],
+            "doctorRec": []
         }
     ]
 }
