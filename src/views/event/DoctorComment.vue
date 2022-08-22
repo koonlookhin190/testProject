@@ -8,7 +8,7 @@
         <CommentList
           v-if="GStore.comments"
           :comments="GStore.patient.doctorRec"
-          :commentsHistory="GStore.commentsHistory"
+          :commentsHistory="GStore.patient"
         />
       </div>
     </div>

@@ -20,7 +20,7 @@
         >
       </div>
     </div>
-    <router-view :patient="GStore.patient" :vaccines="GStore.vaccines" />
+    <router-view :patient="GStore.patient" />
   </div>
 </template>
 <script>

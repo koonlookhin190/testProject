@@ -14,7 +14,7 @@
                 { "number": 2, "type": "Pfizer", "date": "21-08-2021" }, 
                 { "number": 3, "type": "Pfizer", "date": "29-01-2022" }
             ],
-            "comment": [{ "Harry": "Peter", "Potter": "Parker","name": "Albus Dumbledore", "comment": "Take medicine everyday", "date": "29-01-2022" }],
+            "comment": [{ "patient_name": "Peter", "patient_surname": "Parker","name": "Albus Dumbledore", "comment": "Take medicine everyday", "date": "29-01-2022" }],
             "doctorRec": []
         },
         {
@@ -30,7 +30,7 @@
                 { "number": 1, "type": "Moderna", "date": "04-03-2021" },
                 { "number": 2, "type": "Moderna", "date": "25-03-2021" }
             ],
-            "comment": [{ "Charlie": "Peter", "Puth": "Parker","name": "Michael Jackson", "comment": "Drink a lot of water",  "date": "25-03-2021" }],
+            "comment": [{ "patient_name": "Peter", "patient_surname": "Parker","name": "Michael Jackson", "comment": "Drink a lot of water",  "date": "25-03-2021" }],
             "doctorRec": []
         },
         {
@@ -228,22 +228,6 @@
                 { "number": 2, "type": "Moderna", "date": "22-09-2021" }
             ],
             "comment": [{ "patient_name": "Ryan", "patient_surname": "Gosling", "name": "Leif Garrett", "comment": "Eat healthy and drink a lot of water", "date": "22-09-2021" }],
-            "doctorRec": []
-        },
-        {
-            "id": 15,
-            "name": "Robert",
-            "surname": "Downey Jr.",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8NG8tRjukxvrSbGk2CfWU_aw9yUjpnFqbAoORbc7lZityM2nl",
-            "age": 57,
-            "gender": "Male",
-            "hometown": "New York, US",
-            "status": "2nd dose",
-            "vaccine": [ 
-                { "number": 1, "type": "Pfizer", "date": "11-07-2022" },
-                { "number": 2, "type": "Pfizer", "date": "03-08-2022" }
-            ],
-            "comment": [{  "patient_name": "Robert", "patient_surname": "Downey Jr.", "name": "Leif Garrett", "comment": "Eat healthy and drink a lot of water", "date": "03-08-2022" }],
             "doctorRec": []
         }
     ]

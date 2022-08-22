@@ -15,8 +15,5 @@ export default {
   },
   getPatient(id) {
     return apiClient.get('/people/' + id)
-  },
-  getVaccine(id) {
-    return apiClient.get('/vaccine/' + id)
   }
 }

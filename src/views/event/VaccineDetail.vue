@@ -6,7 +6,7 @@
         <th>TYPE</th>
         <th>DATE</th>
       </tr>
-      <tr v-for="vaccine in vaccines.details" :key="vaccine">
+      <tr v-for="vaccine in patient.vaccine" :key="vaccine">
         <td>{{ vaccine.number }}</td>
         <td>{{ vaccine.type }}</td>
         <td>{{ vaccine.date }}</td>
@@ -16,7 +16,7 @@
 </template>
 <script>
 export default {
-  props: ['vaccines']
+  props: ['patient']
 }
 </script>
 <style scoped>

@@ -5,7 +5,6 @@ import PatientDetailView from '../views/event/PatientDetailView.vue'
 import DoctorComment from '../views/event/DoctorComment.vue'
 import VaccineDetail from '../views/event/VaccineDetail.vue'
 import PatientService from '@/service/PatientService.js'
-import CommentHistoryService from '@/service/CommentHistoryService.js'
 import NProgress from 'nprogress'
 import GStore from '@/store'
 const routes = [
@@ -24,32 +23,16 @@ const routes = [
     props: true,
     component: PatientLayoutView,
     beforeEnter: (to) => {
-      return (
-        PatientService.getPatient(to.params.id)
-          .then((response) => {
-            GStore.patient = response.data
-            GStore.patient.doctorRec = GStore.comments.filter(
-              (patient) => GStore.patient.id == patient.patient_id
-            )
-          })
-          .catch((error) => {
-            console.log(error)
-          }),
-        PatientService.getVaccine(to.params.id)
-          .then((response) => {
-            GStore.vaccines = response.data
-          })
-          .catch((error) => {
-            console.log(error)
-          }),
-        CommentHistoryService.getCommentHistory(to.params.id)
-          .then((response) => {
-            GStore.commentsHistory = response.data
-          })
-          .catch((error) => {
-            console.log(error)
-          })
-      )
+      return PatientService.getPatient(to.params.id)
+        .then((response) => {
+          GStore.patient = response.data
+          GStore.patient.doctorRec = GStore.comments.filter(
+            (patient) => GStore.patient.id == patient.patient_id
+          )
+        })
+        .catch((error) => {
+          console.log(error)
+        })
     },
     children: [
       {
